@@ -25,4 +25,21 @@ public class SliderPageAdapter extends FragmentStatePagerAdapter {
     public int getCount() {
         return fragmentList.size();
     }
+
+    @Override
+    public CharSequence getPageTitle (int position)
+    {
+        switch (position)
+        {
+            case 0:
+                return "INFORMACION";
+            //break;
+            case 1:
+                return  "MAPA";
+            case 2:
+                return "FOTOS";
+
+        }
+        return null;
+    }
 }
